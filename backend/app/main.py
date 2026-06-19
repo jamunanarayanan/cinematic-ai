@@ -14,7 +14,12 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:5175", "https://cinematic-ai.vercel.app"],
+    allow_origins=[
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:5175",
+    "https://cinematic-ai-red.vercel.app"
+],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
